@@ -53,6 +53,8 @@ client.on('messageCreate', async (message) => {
             console.log(responseJSON);
             if (responseJSON.status == "success") {
                 message.reply(`Generated image for '${prompt}': ${responseJSON.output[0]}`);
+            } else if (responseJSON.status == "failed") {
+                message.reply(`Request failed: ${responseJSON.messege}`); // 'messege' is intentional, typo is on API end
             } else if (responseJSON.status == "error") {
                 message.reply(`Error: ${responseJSON.message}`);
             }
