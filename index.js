@@ -54,7 +54,7 @@ client.on('messageCreate', async (message) => {
             if (responseJSON.status == "success") {
                 message.reply(`Generated image for '${prompt}': ${responseJSON.output[0]}`);
             } else if (responseJSON.status == "error") {
-                throw new Error(responseJSON.message);
+                message.reply(`Error: ${responseJSON.message}`);
             }
         });
     } catch(error) {
