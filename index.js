@@ -1,6 +1,6 @@
-import 'dotenv/config';
-import { Client, IntentsBitField } from 'discord.js';
-import request from 'request';
+require('dotenv/config');
+const { Client, IntentsBitField } = require('discord.js');
+const request = require('request');
 const client = new Client({
     intents: [
         IntentsBitField.Flags.Guilds,
