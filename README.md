@@ -25,7 +25,10 @@ cp .env.example .env
 
 4. Fill in the required details in the newly created `.env` (Do not share these keys! They will give anyone access to their associated bots/APIs.)
 
-5. Start the bot
+   **Note**: The bot should be created through the Discord Developer Portal (https://discord.com/developers/applications) and needs permissions
+   to `Send Messages` and `Read Message History`.
+
+6. Start the bot
 
 ```powershell
 npm run start
