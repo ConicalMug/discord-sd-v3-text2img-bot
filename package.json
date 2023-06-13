@@ -1,13 +1,13 @@
 {
   "name": "discord-sd-v3-text2img-bot",
   "version": "1.0.0",
-  "description": "",
+  "description": "A simple Discord bot capable of interacting with Stable Diffusion API's V3 Text2Image API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "ConicalMug",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^14.11.0",
